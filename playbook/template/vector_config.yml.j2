@@ -1,0 +1,19 @@
+[sources]
+  [source.my_source]
+    type = "file"
+    include = ["/var/log/*.log"]
+    ignore_older = 86400
+
+[transforms]
+  [transform.my_transform]
+    type = "remap"
+    inputs = ["my_source"]
+    source = '''
+      .message = to_string(.message)
+    '''
+
+[sinks]
+  [sink.my_sink]
+    type = "console"
+    inputs = ["my_transform"]
+    encoding.codec = "json"
