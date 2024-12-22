@@ -63,7 +63,6 @@
         owner: root
         group: root
         mode: "0755"
-
     - name: Copy template
       ansible.builtin.template:
         src: "./template/vector_config.yml.j2"
