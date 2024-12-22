@@ -14,9 +14,23 @@
 3. При создании tasks рекомендую использовать модули: `get_url`, `template`, `unarchive`, `file`.
 4. Tasks должны: скачать дистрибутив нужной версии, выполнить распаковку в выбранную директорию, установить vector.
 5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
+### Ответ
+![image](https://github.com/user-attachments/assets/d7f0b2c6-a086-457e-9580-ec5cd0839148)
+
 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
+### Ответ
+![image](https://github.com/user-attachments/assets/3b67e7f8-5ac2-4afc-a9d9-0b05f7bb538b)
+
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
+### Ответ
+![image](https://github.com/user-attachments/assets/b4896508-d099-4e3a-8cd6-0efae5d6016b)
+![image](https://github.com/user-attachments/assets/66e65432-488c-4b4c-80d1-d59842a7788a)
+
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
+### Ответ
+![image](https://github.com/user-attachments/assets/17495dce-c4f2-4f93-9d3e-9a913740e2c4)
+![image](https://github.com/user-attachments/assets/c1484915-bec8-409f-8a55-39d14146b367)
+
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги. Пример качественной документации ansible playbook по [ссылке](https://github.com/opensearch-project/ansible-playbook). Так же приложите скриншоты выполнения заданий №5-8
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
