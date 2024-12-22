@@ -1,3 +1,0 @@
-vector_version: "0.43.0"
-vector_config_dir: "template/vector_config.yml.j2"
-vector_config:
